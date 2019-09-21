@@ -29,3 +29,5 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+db/migrate/20190921180018_create_contacts.rb
