@@ -3,12 +3,12 @@
 <form action="/contacts" method="post">
   <p>
     <label>Email address</label><br />
-    <input type="email" placeholder="Enter email">
+    <input type="email" name="contact[email]" placeholder="Enter email">
   </p> 
   
   <p>
     <label>Password</label><br />
-    <input type="password" placeholder="Password">
+    <textarea type="text" name="contact[message]" placeholder="Enter message"></textarea>
   </p>
   
   <p>
