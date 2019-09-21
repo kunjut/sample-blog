@@ -4,5 +4,6 @@ class ContactsController < ApplicationController
   end
 
   def create
+    render plain: params[:contact]
   end
 end
