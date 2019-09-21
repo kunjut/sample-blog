@@ -1,17 +1,17 @@
 <h1>Contact with me</h1>
 
-<form action="/contacts" method="post">
+<%= form_for :contact, url: '/contacts' do |f| %>
   <p>
-    <label>Email address</label><br />
-    <input type="email" name="contact[email]" placeholder="Enter email">
-  </p> 
-  
-  <p>
-    <label>Password</label><br />
-    <textarea type="text" name="contact[message]" placeholder="Enter message"></textarea>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
   </p>
-  
+
   <p>
-    <button type="submit">Send</button>
+    <%= f.label :message %><br />
+    <%= f.text_area :message %>
   </p>
-</form>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
